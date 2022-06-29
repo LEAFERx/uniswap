@@ -1,0 +1,21 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "build": "npx hardhat compile",
+    "deploy:rollup": "npx hardhat run scripts/deploy-uniswap.js --network rollup",
+    "test": "npx hardhat test"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@uniswap/lib": "^4.0.1-alpha",
+    "@uniswap/v2-core": "^1.0.1",
+    "ethers": "^5.5.3",
+    "hardhat": "^2.0.10",
+    "hardhat-ethernal": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethereumjs-util": "^7.1.3"
+  }
+}

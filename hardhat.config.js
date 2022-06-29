@@ -10,7 +10,7 @@ require('hardhat-ethernal');
 //       export PRIVATE_KEY=0x.....
 const privateKey = process.env.PRIVATE_KEY;
 const privateKeyDev =
-   '0xf3b60a9dad7897e8704131ea8c6cc95b42a6afa922fa97388da580c7268a7812';
+   '0xf3b60a9dad7897e8704131ea8c6cc95b42a6afa922fa97388da580c7268a7812'; // Change to your testing key if needed
 
 module.exports = {
    defaultNetwork: 'hardhat',
@@ -18,9 +18,9 @@ module.exports = {
    networks: {
       hardhat: {},
       rollup: {
-         url: 'http://127.0.0.1:4011',
+         url: 'http://127.0.0.1:4011', // Change to the actual L2 node port
          accounts: [privateKeyDev],
-         chainId: 13527,
+         chainId: 13527, // Change to the actual L2 chain ID
       },
    },
    solidity: {
